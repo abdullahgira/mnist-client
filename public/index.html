@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Minsta</title>
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body onload="init();">
+    <h1 class="text-center mb-3 mt-5">ARE YOU FAST ENOUGH?</h1>
+    <h4 class="text-center text-muted mb-5">Enter a numerical value</h4>
+    <div class="container">
+      <div class="text-center mb-5">
+        <h4>Timer</h4>
+        <h3 id="timer"></h3>
+      </div>
+      <div class="row">
+        <h3 class="col-sm-3">Wins: <span id="wins"></span></h3>
+        <h3 class="col-sm-3">Losses: <span id="losses"></span></h3>
+        <h3 class="col-sm-3">Level: <span id="level"></span></h3>
+        <h3 class="col-sm-3">Chances: <span id="chances"></span></h3>
+      </div>
+      <div class="text-center d-flex flex-column bd-highlight mb-5">
+        <div id="sketch" class="p-5 row"></div>
+        <div class="text-center p-5">
+          <button type="button" id="evaluate" class="btn btn-xl btn-outline-success">
+            Submit
+          </button>
+          <button
+            type="button"
+            onclick="clearDrawing()"
+            class="btn btn-xl btn-outline-danger"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+      <h3 id="result"></h3>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/randomEquationGenerator.js"></script>
+  <script src="/canvas.js"></script>
+</html>

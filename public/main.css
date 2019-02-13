@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+
+#canvas {
+  margin: 0 30px;
+  margin-bottom: -30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+}
+
+#equation {
+  font-size: 86px;
+}
+
+h1 {
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+}
+h4 {
+  text-transform: capitalize;
+}
