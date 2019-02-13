@@ -5,8 +5,13 @@ a simple game.
 
 ### Requirements
 
+Nodejs > 8.0
+
+### Installation
+
 ```
-nodejs;
-socketio;
-express;
+cd projectDir/
+npm i
 ```
+
+Then use the following command to run the server `node index.js`
